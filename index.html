@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hot &amp; Cold — Bathhouse Journal</title>
+  <meta name="description" content="Rate bathhouses and bathhouse experiences across weighted categories.">
+  <meta name="theme-color" content="#e8f0ed" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1d1f" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Shared gradient definitions used by score rings -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="waterGrad" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" style="stop-color: var(--fill-a)"/>
+        <stop offset="100%" style="stop-color: var(--fill-b)"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- Ambient background: drifting mist and slow waves -->
+  <div class="ambient" aria-hidden="true">
+    <div class="mist mist-1"></div>
+    <div class="mist mist-2"></div>
+    <div class="mist mist-3"></div>
+    <svg class="waves" viewBox="0 0 1440 200" preserveAspectRatio="none">
+      <g class="wave wave-1"><path d="M0 120 C 240 80 480 160 720 120 S 1200 80 1440 120 S 1920 160 2160 120 S 2640 80 2880 120 V200 H0Z"/></g>
+      <g class="wave wave-2"><path d="M0 140 C 240 170 480 110 720 140 S 1200 170 1440 140 S 1920 110 2160 140 S 2640 170 2880 140 V200 H0Z"/></g>
+      <g class="wave wave-3"><path d="M0 165 C 240 150 480 185 720 165 S 1200 150 1440 165 S 1920 185 2160 165 S 2640 150 2880 165 V200 H0Z"/></g>
+    </svg>
+  </div>
+
+  <main id="app" class="app" aria-live="polite"></main>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

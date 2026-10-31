@@ -1,0 +1,13 @@
+{
+  "name": "Hot & Cold — Bathhouse Journal",
+  "short_name": "Hot & Cold",
+  "description": "Rate bathhouses and bathhouse experiences across weighted categories.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#e8f0ed",
+  "theme_color": "#e8f0ed",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
